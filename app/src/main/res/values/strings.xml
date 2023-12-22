@@ -1,0 +1,8 @@
+<resources>
+    <string name="coordonnee">Coordonnée</string>
+    <string name="adresse_mail">Adresse_mail</string>
+    <string name="adresse_livraison">Addresse_livraison</string>
+    <string name="prenom">Prenom</string>
+    <string name="nom">Nom</string>
+    <string name="app_name">showroom</string>
+</resources>
