@@ -14,8 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemReselectedListener;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private Button connect;
     private TextView textregister;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 if (((login.getText().toString()).equals("test")) && ((pw.getText().toString()).equals("iset"))) {
                     Toast.makeText(MainActivity.this, "bien login et mot de passe", Toast.LENGTH_LONG).show();
                     goTonextActivity();
-                } else {
+                }
+                else {
                     Toast.makeText(MainActivity.this, "vérifier vos donnée s'il vous plait ", Toast.LENGTH_LONG).show();
                 }
 
