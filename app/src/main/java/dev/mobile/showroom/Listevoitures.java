@@ -64,6 +64,9 @@ public class Listevoitures extends AppCompatActivity {
                 // Implement your logic for adding cars
                 // This is where you can navigate to a new activity or fragment for adding cars
                 // For simplicity, let's show a toast message
+                Intent intent = new Intent(Listevoitures.this, Admin.class);
+                startActivity(intent);
+
                 Toast.makeText(Listevoitures.this, "Add button clicked", Toast.LENGTH_SHORT).show();
             }
         });

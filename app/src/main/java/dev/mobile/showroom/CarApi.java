@@ -13,10 +13,10 @@ public interface CarApi {
 
     @FormUrlEncoded
     @POST("showroom/insert.php")
-    Call<Car> insertCar(@Field("marque") String name,
-                        @Field("model") String username,
-                        @Field("prix") String password,
-                        @Field("paiement") String email);
+    Call<Car> insertCar(@Field("marque") String marque,
+                        @Field("model") String model,
+                        @Field("prix") String prix,
+                        @Field("paiement") String paiement);
 
     @FormUrlEncoded
     @POST("showroom/update.php")
@@ -28,7 +28,7 @@ public interface CarApi {
 
     @FormUrlEncoded
     @POST("showroom/delete.php")
-    Call<Car> deleteUser(@Field("id") int id);
+    Call<Void> deleteCar(@Field("id") int id);
 
     @GET("showroom/CarDetails.php")
     Call<Car> getCarDetails(@Field("marque") String marque); // Assuming you have a method for fetching details by marque
